@@ -18,19 +18,19 @@
  }
 
  .searchArea {
-  font-weight: bolder;
-  border-radius: 5px;
+   font-weight: bolder;
+   border-radius: 5px;
    border: solid black 2px;
    margin-right: 20px;
    margin: 10px;
    padding: 10px;
    clear: both;
    float: left;
-   width: 33%;
-   height: 100%;
+   width: 20%;
+   height: 595px;
    font-family: Georgia, 'Times New Roman', Times, serif;
    background-color: #dceaa4;
-   caret-color:blue;
+   caret-color: blue;
  }
 
  .button {
@@ -40,9 +40,42 @@
  }
 
  .cityButtons {
-  border-radius: 10px;
-  margin:10px;
-  padding:10px;
-  display: flex;
-  justify-content: space-around;
+   border-radius: 10px;
+   /* margin:10px; */
+   /* padding:10px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+
+ }
+
+ .box {
+   display: flex;
+   flex-direction: column;
+   justify-content: right;
+   align-items: right;
+   width: 78%;
+   height: 300px;
+   border: 2px solid black;
+   border-radius: 5px;
+   padding: 10px;
+   margin: 20px;
+   font-weight: 500;
+ }
+
+ .lowerBox {
+   display: flex;
+   justify-content: space-around;
+   width: 78%;
+   height: 275px;
+   border: 2px solid black;
+   border-radius: 5px;
+   padding: 50px;
+   margin: 20px;
+   margin-right: 10px;
+   /* font-size: 12px; */
+ }
+
+ .innerBox {
+  font-size: 18px;
  }
