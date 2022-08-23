@@ -52,8 +52,8 @@
  .box {
    display: flex;
    flex-direction: column;
-   justify-content: right;
-   align-items: right;
+   /* justify-content: space-between; */
+   /* align-items: right; */
    width: 78%;
    height: 300px;
    border: 2px solid black;
@@ -73,9 +73,13 @@
    padding: 50px;
    margin: 20px;
    margin-right: 10px;
-   /* font-size: 12px; */
  }
 
  .innerBox {
   font-size: 18px;
+ }
+
+ #momentDate {
+  text-align:center;
+  font-weight: bold;
  }
