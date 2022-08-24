@@ -4,8 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/stylesheet.css" />
   <link rel="shortcut icon" type="image/png" href="./assets/download-icon-weather+icon-1320087273185061618_24.png">
   <title>Weather Forecast</title>
@@ -31,13 +29,13 @@
       </section>
 
       <section class="cityButtons"><br>
-
-        <div><button placeholder="recentCity1">Albequerue</button></div><br>
-        <div><button placeholder="recentCity2">Salt Lake City</button></div><br>
-        <div><button placeholder="recentCity3">Springfield</button></div><br>
-        <div><button placeholder="recentCity4">Palm Springs</button></div><br>
-        <div><button placeholder="recentCity5">Reno</button></div>
-
+        <ul class=cities>
+          <li><button placeholder="recentCity1">Idaho Falls</button></li><br>
+          <li><button placeholder="recentCity2">Salt Lake City</button></li><br>
+          <li><button placeholder="recentCity3">Tallahassee</button></li><br>
+          <li><button placeholder="recentCity4">Manhattan</button></li><br>
+          <li><button placeholder="recentCity5">Key West</button></li>
+        </ul>
       </section>
 
     </article>
@@ -45,10 +43,11 @@
   </aside>
 
   <div class="box">
-    <p>*City* 
-    </p>
-    <p id="momentDate"></p>
-    <p id="tempMain">Temperature:</p><br>
+    <div id="momentDate"></div>
+    <div>
+      <p id="cityMain">*City*<img src="" rel="icon"></p>
+    </div><br>
+    <p id="tempMain">Temperature: </p><br>
     <p id="windMain">Wind: </p><br>
     <p id="humidMain">Humidity:</p><br>
     <p id="uvIndexMain">UV Index:</p><br>
@@ -100,6 +99,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
+  <script src="./assets/main.js"></script>
 </body>
 
 </html>
@@ -119,14 +119,30 @@
 
 <!-- ```
 GIVEN a weather dashboard with form inputs
+
 WHEN I search for a city
 THEN I am presented with current and future conditions for that city and that city is added to the search history
+
 WHEN I view current weather conditions for that city
 THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+TODO: (variables)
+>city name = 
+>date = (managed by moment.js, ---DONE)
+>icon = "current:weather:icon"
+>temperature = "current:temp"
+>humidity = "current:humidity"
+>wind MPH = "current:wind_speed" + mph?
+>UV index = "current:uvi"
+
+
+
 WHEN I view the UV index
 THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+
 WHEN I view future weather conditions for that city
 THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+
 WHEN I click on a city in the search history
 THEN I am again presented with current and future conditions for that city
+
 ``` -->

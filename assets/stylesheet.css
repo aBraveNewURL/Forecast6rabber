@@ -17,6 +17,10 @@
    border: solid #293933 3px;
  }
 
+.cities {
+  list-style: none;
+}
+
  .searchArea {
    font-weight: bolder;
    border-radius: 5px;
@@ -64,6 +68,7 @@
  }
 
  .lowerBox {
+  
    display: flex;
    justify-content: space-around;
    width: 78%;
@@ -80,6 +85,6 @@
  }
 
  #momentDate {
-  text-align:center;
+  /* text-align:center; */
   font-weight: bold;
  }
