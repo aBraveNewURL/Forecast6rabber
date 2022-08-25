@@ -17,6 +17,10 @@
    border: solid #293933 3px;
  }
 
+.cityMain {
+  font-weight: bolder;
+}
+
 .cities {
   list-style: none;
 }
