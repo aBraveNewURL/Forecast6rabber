@@ -3,9 +3,9 @@
 // let moment = moment();
 // console.log(moment.toString());
 var theDate = moment().format('LL');
-document.getElementById("momentDate").innerHTML = theDate; 
+document.getElementById("momentDate").innerHTML = theDate;
 
-const url = `https://api.openweathermap.org/data/2.5/onecall?lat=59&lon=9905fc9a99b787e05e7e25f1ee7e0628`;
+const url = `https://api.openweathermap.org/data/2.5/weather?&units=imperial&appid=9905fc9a99b787e05e7e25f1ee7e0628`;
 // *API KEY: 9905fc9a99b787e05e7e25f1ee7e0628
 const APIKey = "4d8fb5b93d4af21d66a2948710284366";
 const form = document.querySelector(".searchArea form");
@@ -16,20 +16,35 @@ var button = document.querySelector(".button")
 
 //Prevent default behavior, grab input
 function noDefault(event) {
-    event.preventDefault();
-    const inputVal = input.value;
-    console.log(event);
-  }
-    
-  button.addEventListener("click", noDefault);
+  event.preventDefault();
+  const inputVal = input.value;
+  console.log(event);
+}
+
+button.addEventListener("click", noDefault);
 
 
 //Fetch request for data
 
-fetch(url)
-  .then(response => response.json())
-  .then(data => {
-    // do stuff with the data
-  })
-    
-  // https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=9905fc9a99b787e05e7e25f1ee7e0628
+// fetch(url)
+//   .then(response => response.json())
+// console.log(response)
+//   .then(data => {
+//     // do stuff with the data
+//   })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
