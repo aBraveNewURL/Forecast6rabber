@@ -36,14 +36,17 @@
   </aside>
 
   <div class="box">
-    <div id="momentDate"></div><br>
+    <div id="momentDate"></div>
     <div>
-      <h2 id="cityMain"><span><img src="#" class=iconMain></span></h2>
+      <img id="iconMain" src="">
+      <h2 id="cityMain"></h2>
+      
     </div><br>
     <p id="tempMain"></p><br>
     <p id="windMain"></p><br>
     <p id="humidMain"></p><br>
     <p id="uvIndexMain"></p><br>
+    
 
   </div>
 
@@ -112,21 +115,11 @@
 <!-- ```
 GIVEN a weather dashboard with form inputs
 
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
+? WHEN I search for a city
+? THEN I am presented with current and future conditions for that city and that city is added to the search history
 
 WHEN I view current weather conditions for that city
 THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-TODO: (variables)
->city name = 
->date = (managed by moment.js, ---DONE)
->icon = "current:weather:icon"
->temperature = "current:temp"
->humidity = "current:humidity"
->wind MPH = "current:wind_speed" + mph?
->UV index = "current:uvi"
-
-
 
 WHEN I view the UV index
 THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
