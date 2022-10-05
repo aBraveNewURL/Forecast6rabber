@@ -18,11 +18,12 @@
   <aside class="searchArea">
     <article>
       <section>
-          <input class="search" type="text" maxlength="30" placeholder="Seach Any U.S. City" name="" style="background-color:#e4e6e6;">
+        <input class="search" type="text" maxlength="30" placeholder="Seach Any U.S. City" name=""
+          style="background-color:#e4e6e6;">
       </section>
 
       <section class="cityButtons"><br>
-        <ul class=cities>
+        <ul class="cities">
           <li><button placeholder="recentCity1">Idaho Falls</button></li><br>
           <li><button placeholder="recentCity2">Salt Lake City</button></li><br>
           <li><button placeholder="recentCity3">Tallahassee</button></li><br>
@@ -40,13 +41,15 @@
     <div>
       <img id="iconMain" src="">
       <h2 id="cityMain"></h2>
-      
+
     </div><br>
     <p id="tempMain"></p><br>
     <p id="windMain"></p><br>
     <p id="humidMain"></p><br>
-    <p id="uvIndexMain"></p><br>
-    
+    <p id="uvIndexMain"></p>
+    <div class="uvcolor" width="20" height="20">
+    </div><br>
+
 
   </div>
 
@@ -80,9 +83,6 @@
 
   </article>
 
-
-
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
@@ -98,36 +98,3 @@
 </body>
 
 </html>
-
-
-
-<!-- <aside class="card">
-    <div class="container1">
-      <h4><b>John Doe</b></h4>
-    </div> -->
-
-
-
-
-
-
-
-<!-- ```
-GIVEN a weather dashboard with form inputs
-
-? WHEN I search for a city
-? THEN I am presented with current and future conditions for that city and that city is added to the search history
-
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
-
-WHEN I view the UV index
-THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
-
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-
-``` -->

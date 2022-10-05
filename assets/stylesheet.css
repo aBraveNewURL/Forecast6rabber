@@ -88,6 +88,35 @@
   font-size: 18px;
  }
 
+ .uvcolor {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  background-color:white;
+}
+/* 
+.low {
+  background: #558B2F;
+}
+
+.mod {
+  background: #F9A825;
+}
+
+.high {
+  background: #EF6C00;
+}
+
+.vhigh {
+  background: #B71C1C;
+}
+
+.extr {
+  background: #6A1B9A;
+} */
+
+
+
  #momentDate {
   /* text-align:center; */
   font-weight: bold;
