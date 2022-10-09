@@ -23,31 +23,36 @@ function setQuery(evt) {
     evt.preventDefault();
     localStorage.setItem("City", JSON.stringify(search.value));
     getResults(search.value);
-    console.log(search.value)
+    console.log(search.value);
   };
 };
 
 function getResults(query) {
-  fetch(`${api.base}weather?q=${query}&units=imperial&APPID=${api.key}`)
+  fetch(`${api.base}forecast?q=${query}&units=imperial&APPID=${api.key}`)
     .then(weather => {
       return weather.json();
-    }).then(displayResults);
-};
-
-function getResults5(query) {
-fetch(`${api.base}forecast?q=${query}&units=imperial&APPID=${api.key}`)
-    .then(forecast => {
-      return forecast.json();
     })
+    .then(displayResults);
 };
 
-function displayResults(weather,forecast) {
+// function getResults5(weather) {
+//   lat = `${weather.coord.lat}`;
+//   lon = `${weather.coord.lon}`;
+//   fetch(`${api.base}forecast?q=${query}&units=imperial&APPID=${api.key}`)
+//     .then(forecast => {
+//       console.log(forecast);
+//       return (forecast).json();
+//     })
+//     .then(displayResults(forecast));    
+// };
+
+function displayResults(weather) {
 
   console.log(weather);
-  console.log(forecast)
-  let lat = `${weather.coord.lat}`
-  let lon = `${weather.coord.lon}`
-  var iconCode = `${weather.weather[0].icon}`;
+  // console.log(forecast);
+  var lat = `${city.coord.lat}`;
+  var lon = `${city.coord.lon}`;
+  var iconCode = `${list[0].weather[0].icon}`;
   var iconURL = "http://openweathermap.org/img/w/" + iconCode + ".png";
   console.log("LAT:", lat);
   console.log("LONG:", lon);
@@ -78,7 +83,7 @@ function displayResults(weather,forecast) {
         console.log(response.result.uv);
         var uvIndex = response.result.uv;
         uvIndexMain.innerHTML = `UV Index: ${uvIndex}`;
-        var uvColor = document.getElementById("uvColor");
+        // var uvColor = document.getElementById("uvColor");
         // if (uvIndex >= 0 && uvIndex < 3) {
         //   console.log(document.getElementById(uvColor));
         //   document.getElementsByClassName("uvColor").style.backgroundColor = "#558B2F";
